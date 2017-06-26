@@ -1,0 +1,35 @@
+{
+  "name": "cdd-pc",
+  "version": "1.0.0",
+  "description": "a platform about fin learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src/ webpack.*.js --cache",
+    "build": "rm -rf dist && webpack --env production",
+    "debug": "rm -rf dist && webpack --debug",
+    "dev": "webpack-dev-server --env development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moha-moha/cdd.git"
+  },
+  "author": "Moha",
+  "bugs": {
+    "url": "https://github.com/moha-moha/cdd/issues"
+  },
+  "homepage": "https://github.com/moha-moha/cdd#readme",
+  "devDependencies": {
+    "art-template": "^4.11.0",
+    "art-template-loader": "^1.4.3",
+    "babili-webpack-plugin": "^0.1.1",
+    "css-loader": "^0.28.4",
+    "eslint": "^3.13.0",
+    "eslint-loader": "^1.8.0",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
+  }
+}

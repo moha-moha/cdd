@@ -1,0 +1,7 @@
+<% include('../layout/header.art', {
+      title: title
+}) %>
+
+<p>我是login页</p>
+<p>This is just an awesome page.</p>
+{{include '../layout/footer.art'}}
