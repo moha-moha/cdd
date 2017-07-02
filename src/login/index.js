@@ -1,13 +1,16 @@
-import './index.css';
+require('./index.css');
 const render = require('./login.art');
-const data = {
-  title: 'My Page',
-};
-const html = render(data);
-console.log(html);
-
-if (typeof document === 'object') {
-  document.body.innerHTML = html;
+const html = render();
+function swapScreen(id) {
+  $('.visible').removeClass('visible animated fadeInUp');
+  $('#'+id).addClass('visible animated fadeInUp');
 }
-
-module.exports = render;
+$(function(){
+  $('body').html(html);
+  App.setPage('login');  //Set current page
+  App.init(); //Initialise plugins and elements
+  $('.scene').on('click',function(){
+    var target = $(this).data('param');
+    swapScreen(target);
+  });
+});

@@ -1,8 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
 const pages = require('./page.config');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const BabiliPlugin = require('babili-webpack-plugin');
+// const BabiliPlugin = require('babili-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin'); 
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
@@ -34,7 +36,14 @@ pages.forEach(page => {
 });
 
 config.plugins.push(cssPlugin);
-config.plugins.push(new BabiliPlugin());
+// config.plugins.push(new BabiliPlugin());
+config.plugins.push(new CopyWebpackPlugin([{
+  from: path.join(__dirname,'src/lib'),
+  to: path.join(__dirname,'dist/lib'),
+  toType:'dir',
+}]));
+
+config.plugins.push(new webpack.HotModuleReplacementPlugin());
 
 module.exports = {
 
@@ -56,7 +65,7 @@ module.exports = {
         fallback : 'style-loader',
       }),
     },{
-      test: /\.(jpg|png|gif)$/i,
+      test: /\.(png|jpe?g|gif)(\?\S*)?$/,
       use: ['file-loader'],
     },{
       test: /\.art$/,
@@ -70,9 +79,9 @@ module.exports = {
     }],
   },
   devServer: {
-    host: process.env.HOST,
     compress: true, // gzip
     port: '8000',
+    hotOnly:true,
   },
   // 增加调试
   devtool: 'source-map',
