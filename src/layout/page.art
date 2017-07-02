@@ -7,6 +7,5 @@
 {{/block}}
 
 {{block 'content'}}
-<p><img src="/layout/octocat.png" alt="octocat"></p>
 <p>This is just an awesome page.</p>
 {{/block}}

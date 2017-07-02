@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="./common/bootstrap-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<h3>页面列表</h3>
+		<ul class="list-group">
+			<% var list = htmlWebpackPlugin.options.pageList %>
+			<% for(let i= 0 ; i < list.length ; i++ ){ %>
+				<li class="list-group-item">
+					<a 
+						style="color:#d9534f;" 
+						href="<%= htmlWebpackPlugin.options.publicPath %><%= list[i].filename %>"
+					><%= list[i].title %></a>
+				</li>
+			<% } %>
+		</ul>
+	</div>
+</body>
+</html>

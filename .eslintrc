@@ -17,5 +17,9 @@
     "semi": ["error", "always"],
     "no-unused-vars": ["warn"],
     "no-console": 0
+  },
+  "globals": {
+    "$": true,
+    "App": true
   }
 }

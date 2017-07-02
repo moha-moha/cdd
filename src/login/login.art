@@ -1,7 +1,145 @@
-<% include('../layout/header.art', {
-      title: title
-}) %>
-
-<p>我是login页</p>
-<p>This is just an awesome page.</p>
+<section id="page">
+			<!-- HEADER -->
+			<header>
+				<!-- NAV-BAR -->
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div id="logo">
+								<a href="index.html"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/NAV-BAR -->
+			</header>
+			<!--/HEADER -->
+			<!-- LOGIN -->
+			<section id="login" class="visible">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="login-box-plain">
+								<h2 class="bigintro">小橙通</h2>
+								<div class="divide-40"></div>
+								<form role="form">
+								  <div class="form-group">
+									<label for="exampleInputEmail1">邮件地址</label>
+									<i class="fa fa-envelope"></i>
+									<input type="email" class="form-control" id="exampleInputEmail1" >
+								  </div>
+								  <div class="form-group"> 
+									<label for="exampleInputPassword1">密码</label>
+									<i class="fa fa-lock"></i>
+									<input type="password" class="form-control" id="exampleInputPassword1" >
+								  </div>
+								  <div class="form-actions">
+									<label class="checkbox"> <input type="checkbox" class="uniform" value=""> 保持登录</label>
+									<button type="submit" class="btn btn-danger">提交</button>
+								  </div>
+								</form>
+								<!-- SOCIAL LOGIN -->
+								<div class="divide-20"></div>
+								<div class="center">
+									<strong>用其它方式登录</strong>
+								</div>
+								<div class="divide-20"></div>
+								<div class="social-login center">
+									<a class="btn btn-primary btn-lg">
+										<i class="fa fa-weibo"></i>
+									</a>
+									<a class="btn btn-info btn-lg">
+										<i class="fa fa-weibo"></i>
+									</a>
+									<a class="btn btn-danger btn-lg">
+										<i class="fa fa-weibo"></i>
+									</a>
+								</div>
+								<!-- /SOCIAL LOGIN -->
+								<div class="login-helpers">
+									<a href="javascript:;" class="scene" data-param="forgot">忘记密码?</a> <br>
+									还没有一个账号？ <a href="javascript:;" class="scene" data-param="register">注册</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/LOGIN -->
+			<!-- REGISTER -->
+			<section id="register">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="login-box-plain">
+								<h2 class="bigintro">注册</h2>
+								<div class="divide-40"></div>
+								<form role="form">
+								  <div class="form-group">
+									<label for="exampleInputName">姓名</label>
+									<i class="fa fa-font"></i>
+									<input type="text" class="form-control" id="exampleInputName" >
+								  </div>
+								  <div class="form-group">
+									<label for="exampleInputUsername">手机号</label>
+									<i class="fa fa-user"></i>
+									<input type="text" class="form-control" id="exampleInputUsername" >
+								  </div>
+								  <div class="form-group">
+									<label for="exampleInputEmail1">邮件地址</label>
+									<i class="fa fa-envelope"></i>
+									<input type="email" class="form-control" id="exampleInputEmail1" >
+								  </div>
+								  <div class="form-group"> 
+									<label for="exampleInputPassword1">密码</label>
+									<i class="fa fa-lock"></i>
+									<input type="password" class="form-control" id="exampleInputPassword1" >
+								  </div>
+								  <div class="form-group"> 
+									<label for="exampleInputPassword2">确认密码</label>
+									<i class="fa fa-check-square-o"></i>
+									<input type="password" class="form-control" id="exampleInputPassword2" >
+								  </div>
+								  <div class="form-actions">
+									<label class="checkbox"> <input type="checkbox" class="uniform" value=""> 我同意 <a href="#">小橙通协议</a></label>
+									<button type="submit" class="btn btn-success">注册</button>
+								  </div>
+								</form>
+								<div class="login-helpers">
+									<a href="javascript:;" class="scene" data-param="login"> 回到登录页</a> <br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!--/REGISTER -->
+			<!-- FORGOT PASSWORD -->
+			<section id="forgot">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-md-offset-4">
+							<div class="login-box-plain">
+								<h2 class="bigintro">重置密码</h2>
+								<div class="divide-40"></div>
+								<form role="form">
+								  <div class="form-group">
+									<label for="exampleInputEmail1">请输入你的邮件地址</label>
+									<i class="fa fa-envelope"></i>
+									<input type="email" class="form-control" id="exampleInputEmail1" >
+								  </div>
+								  <div class="form-actions">
+									<button type="submit" class="btn btn-info">发送找回密码邮件</button>
+								  </div>
+								</form>
+								<div class="login-helpers">
+									<a href="javascript:;" class="scene" data-param="login">回到登录页</a> <br>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- FORGOT PASSWORD -->
+	</section>
 {{include '../layout/footer.art'}}
