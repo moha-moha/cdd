@@ -1,0 +1,34 @@
+<div class="col-md-12">
+  <!-- BOX -->
+    <div class="box border">
+      <div class="box-title">
+        <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">{{subtitle}}</span></h4>
+      </div>
+      <div class="box-body">
+        <div class="tabbable header-tabs">
+          <ul class="nav nav-tabs">
+            <li><a href="#box_tab4" data-toggle="tab"><i class="fa fa-circle-o"></i> <span class="hidden-inline-mobile">公众号设置</span></a></li>
+            <li><a href="#box_tab3" data-toggle="tab"><i class="fa fa-circle-o"></i> <span class="hidden-inline-mobile">分享设置</span></a></li>
+            <li><a href="#box_tab2" data-toggle="tab"><i class="fa fa-laptop"></i> <span class="hidden-inline-mobile">店铺装修</span></a></li>
+            <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-calendar-o"></i> <span class="hidden-inline-mobile">手机预览</span></a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade in active" id="box_tab1">
+            <p>Content #1</p>
+            <p> There were flying cantaloupes, rainbows and songs of happiness near by, I mean I was a little frightened by the flying fruit but I'll take this any day over prison inmates. </p>
+            </div>
+            <div class="tab-pane fade" id="box_tab2">
+            <p>Content #2</p>
+            <p> There were flying cantaloupes, rainbows and songs of happiness near by, I mean I was a little frightened by the flying fruit but I'll take this any day over prison inmates. I skipped closer and closer to the festivities and when I arrived I seen all my friends I had went to high school with there were holding hands and singing Kumbayah around the camp ice.. Yes It was a giant block of ice situated on three wood logs. </p>
+            </div>
+            <div class="tab-pane fade" id="box_tab3">
+            <div class="alert alert-info"><strong>Hello!</strong> I'm a cool tabbed box.</div>
+            <p>Content #3</p>
+            <p> The onion ring senses that the caper of your caper is swiped the fox.  </p>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  <!-- /BOX -->
+</div>
