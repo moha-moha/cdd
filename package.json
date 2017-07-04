@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/moha-moha/cdd#readme",
   "devDependencies": {
+    "arale-qrcode": "^3.0.5",
     "art-template": "^4.11.0",
     "art-template-loader": "^1.4.3",
     "babili-webpack-plugin": "^0.1.1",
@@ -33,7 +34,9 @@
     "file-loader": "^0.11.2",
     "fs-extra": "^3.0.1",
     "html-webpack-plugin": "^2.28.0",
+    "mockjs": "^1.0.1-beta3",
     "open": "^0.0.5",
+    "qs": "^6.5.0",
     "react-dev-utils": "^3.0.1",
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.2",
@@ -43,5 +46,8 @@
     "webpack-dev-server": "^2.5.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
+  },
+  "dependencies": {
+    "clipboard": "^1.7.1"
   }
 }

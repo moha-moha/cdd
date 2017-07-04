@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-md-4 ui-mobile">
+    <img src="https://admin.xiaoe-tech.com/images/phone_preview.png" />
+  </div>
+  <div class="col-md-8 ui-mobile-info">
+    <p><span>店铺地址：{{storeUrl}}</span> <button id="copy" class="btn btn-xs btn-primary" data-clipboard-text={{storeUrl}}>复制到内存</button></p>
+    <p>微信扫一扫访问店铺：</p>
+    <p id="qrcode"></p>
+  </div>
+</div>

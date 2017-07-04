@@ -1,6 +1,6 @@
 const open = require('open');
 const chalk = require('chalk');
-const express = require('express')
+const express = require('express');
 const webpack = require('webpack');
 const webpackDevServer = require('webpack-dev-server');
 const webpackConfig = require('../build/webpack.config.dev');

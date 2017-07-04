@@ -1,0 +1,56 @@
+<div class="box-body form">
+  <form action="http://jquery-file-upload.appspot.com/" method="POST" enctype="multipart/form-data" class="form-horizontal" >
+  <div class="wizard-form">
+      <div class="wizard-content col-md-9">
+        <div class="tab-content">
+          <div class="form-group">
+              <label class="control-label col-md-3">公众号名称:<span class="required">*</span></label>
+              <div class="col-md-5">
+              <input type="text" class="form-control" name="wechatname" placeholder="请输入分享链接标题"/>
+              <span class="error-span"></span>
+              </div>
+          </div>
+          <div class="form-group">
+              <label class="control-label col-md-3">公众号二维码:<span class="required">*</span></label>
+              <div class="col-md-5">
+										<div class="row fileupload-buttonbar">
+											<div class="col-lg-12">
+												<!-- The fileinput-button span is used to style the file input field as button -->
+												<span class="btn btn-success fileinput-button">
+													<i class="fa fa-plus"></i>
+													<span>上传二维码</span>
+													<input type="file" name="files[]" multiple>
+												</span>
+												<!-- The loading indicator is shown during file processing -->
+												<span class="fileupload-loading"></span>
+											</div>
+											<!-- The global progress information -->
+											<div class="col-lg-5 fileupload-progress fade">
+												<!-- The global progress bar -->
+												<div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+													<div class="progress-bar progress-bar-success" style="width:0%;"></div>
+												</div>
+												<!-- The extended global progress information -->
+												<div class="progress-extended">&nbsp;</div>
+											</div>
+										</div>
+										<!-- The table listing the files available for upload/download -->
+										<table role="presentation" class="table table-striped"><tbody class="files"></tbody></table>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="wizard-buttons">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="col-md-offset-3 col-md-9">
+              <a href="javascript:;" class="btn btn-success submitBtn">
+            保存 <i class="fa fa-arrow-circle-right"></i>
+              </a>                            
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </form>
+</div>

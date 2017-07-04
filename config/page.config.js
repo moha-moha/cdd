@@ -8,7 +8,7 @@ module.exports = [{
   entry: 'login/error',
   title: '人气大爆发',
 },{
-  entry: 'appsetting/review',
+  entry: 'appsetting/preview',
   title: '手机预览',
   template: 'src/appsetting/tpl.html',
 }];

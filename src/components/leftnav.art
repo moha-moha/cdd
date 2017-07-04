@@ -17,7 +17,7 @@
 						<!-- SIDEBAR MENU -->
 						<ul>
 							<li>
-								<a href="index.html">
+								<a href="preview.html">
 								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">知识店铺</span>
 								<span class="selected"></span>
 								</a>					
