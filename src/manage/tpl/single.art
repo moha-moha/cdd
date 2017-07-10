@@ -1,0 +1,73 @@
+<div class="box-body form form-horizontal">
+  <div class="wizard-form">
+      <div class="wizard-content col-md-12">
+        <div class="form-group">
+            <label class="control-label col-md-2">音频名称1:<span class="required">*</span></label>
+            <div class="col-md-5">
+            <input type="text" class="form-control" name="groupName" placeholder="请输入专栏名称(建议字数在14字以内)"/>
+            <span class="error-span"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">音频上传:<span class="required">*</span></label>
+            <div class="col-md-4">
+              <form action="//file-arrow-circle-o-up"
+                    class="dropzone"
+                    id="mp3-upload">
+                    <div class="fallback">
+                      <input name="file" type="file" multiple="" />
+                    </div>
+              </form>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">专栏封面:<span class="required">*</span></label>
+            <div class="col-md-4">
+              <form action="//file-arrow-circle-o-up"
+                    class="dropzone"
+                    id="single-cover">
+                    <div class="fallback">
+                      <input name="file" type="file" multiple="" />
+                    </div>
+              </form>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">专栏详情:<span class="required">*</span></label>
+            <div class="col-md-10">
+              <textarea class="ckeditor" name="editor"></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">付费形式:<span class="required">*</span></label>
+            <div class="col-md-3">
+              <div id="setFee" class="make-switch switch" data-on="warning" data-off="danger" data-on-label="收费" data-off-label="免费">
+                  <input type="checkbox" />
+              </div>
+              <div id="amount" class="input-group hidden">
+                <span class="input-group-addon">￥</span>
+                <input type="text" class="form-control" name="amount" placeholder="请输入收费金额"/>
+                <span class="input-group-addon">.00</span>
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">上架时间:<span class="required">*</span></label>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+      </div>
+      <div class="wizard-buttons">
+        <div class="row">
+          <div class="col-md-12">
+          <div class="col-md-offset-3 col-md-9">
+              <a href="javascript:;" class="btn btn-success submitBtn">
+            保存 <i class="fa fa-arrow-circle-right"></i>
+              </a>                            
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

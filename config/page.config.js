@@ -11,4 +11,8 @@ module.exports = [{
   entry: 'appsetting/preview',
   title: '手机预览',
   template: 'src/appsetting/tpl.html',
+},{
+  entry: 'manage/content',
+  title: '商品管理',
+  template: 'src/manage/tpl.html',
 }];

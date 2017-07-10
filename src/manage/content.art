@@ -1,0 +1,25 @@
+<div class="col-md-12">
+  <!-- BOX -->
+    <div class="box border">
+      <div class="box-title">
+        <h4><i class="fa fa-columns"></i><span class="hidden-inline-mobile">{{subtitle}}</span></h4>
+      </div>
+      <div class="box-body">
+        <div class="tabbable header-tabs">
+          <ul class="nav nav-tabs">
+            <li><a href="#box_tab2" data-toggle="tab"><i class="fa fa-circle-o"></i> <span class="hidden-inline-mobile">专栏</span></a></li>
+            <li class="active"><a href="#box_tab1" data-toggle="tab"><i class="fa fa-laptop"></i> <span class="hidden-inline-mobile">单品</span></a></li>
+          </ul>
+           <div class="tab-content">
+            <div class="tab-pane fade in active" id="box_tab1">
+              {{include './tpl/single.art'}}
+            </div>
+            <div class="tab-pane fade" id="box_tab2">
+              {{include './tpl/column.art'}}
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  <!-- /BOX -->
+</div>

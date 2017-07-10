@@ -17,12 +17,19 @@
 						<!-- SIDEBAR MENU -->
 						<ul>
 							<li>
-								<a href="preview.html">
+								<a href="../appsetting/preview.html">
 								<i class="fa fa-tachometer fa-fw"></i> <span class="menu-text">知识店铺</span>
 								<span class="selected"></span>
 								</a>					
 							</li>
+							<li>
+								<a href="../manage/content.html">
+								<i class="fa fa-cogs fa-fw"></i> <span class="menu-text">商品管理</span>
+								<span class="selected"></span>
+								</a>					
+							</li>
 						</ul>
+
 						<!-- /SIDEBAR MENU -->
 					</div>
 				</div>
