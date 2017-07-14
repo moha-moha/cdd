@@ -2,7 +2,7 @@ require('./content.css');
 const Base = require('../common/base');
 const page = require('../components/page');
 const content = require('./content.art');
-const { request } = require('../common/util');
+// const { request } = require('../common/util');
 
 const option = {
   title: '商品管理',
