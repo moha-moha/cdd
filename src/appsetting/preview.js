@@ -48,20 +48,18 @@ class previewPage extends base{
   }
 
   render(){
-    const _this = this;
-    request('preview', {}, function(res){
+    request('preview', {}).then(res =>{
       if(res.success){
         const qrcode = new QRcode({
           text: res.result.storeUrl,
           size: 200,
         });
-        $(_this.container).append(review(res.result));
-        $(_this.container).find('#qrcode').append(qrcode);
-        _this.copy();
-        _this.uploadfile();
+        $(this.container).append(review(res.result));
+        $(this.container).find('#qrcode').append(qrcode);
+        this.copy();
+        this.uploadfile();
       }
-    });
-    
+    });   
   }
 
 }
